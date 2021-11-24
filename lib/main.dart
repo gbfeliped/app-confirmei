@@ -1,3 +1,4 @@
+import 'package:confirmeiapp/pages/dashboard_page.dart';
 import 'package:confirmeiapp/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -31,9 +32,13 @@ class _ConfirmeiAppState extends State<ConfirmeiApp> {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: MaterialColor(0xFF2E9199, color),
+        primarySwatch: MaterialColor(0xFF5F7AF7, color),
       ),
-      home: LoginPage(),
+      initialRoute: '/dashboard',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/dashboard': (context) => DashboardPage(),
+      },
     );
   }
 }
