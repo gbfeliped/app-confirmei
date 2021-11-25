@@ -35,7 +35,7 @@ class _ConfirmeiAppState extends State<ConfirmeiApp> {
       theme: ThemeData(
         primarySwatch: MaterialColor(0xFF5F7AF7, color),
       ),
-      initialRoute: '/dashboard',
+      initialRoute: '/',
       routes: {
         '/': (context) => LoginPage(),
         //'/dashboard': (context) => RequestItem(),
