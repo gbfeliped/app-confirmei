@@ -1,4 +1,5 @@
-import 'package:confirmeiapp/pages/dashboard_page.dart';
+import 'package:confirmeiapp/pages/dashboard/dashboard_page.dart';
+import 'package:confirmeiapp/pages/dashboard/requests_item.dart';
 import 'package:confirmeiapp/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -37,6 +38,7 @@ class _ConfirmeiAppState extends State<ConfirmeiApp> {
       initialRoute: '/dashboard',
       routes: {
         '/': (context) => LoginPage(),
+        //'/dashboard': (context) => RequestItem(),
         '/dashboard': (context) => DashboardPage(),
       },
     );
